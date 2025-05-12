@@ -1,0 +1,450 @@
+/* ======= БАЗОВЫЕ СЕКЦИИ ======= */
+section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+section h1,
+.mainh1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #40107f;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* ======= ЦВЕТ ФОНА ПОДВАЛА ======= */
+.bg-colr {
+    background-color: #6b00e6 !important;
+    --bs-bg-opacity: 1;
+}
+
+/* ======= ПАРАГРАФЫ ======= */
+section p,
+#about-us p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000; /* Только чёрный текст */
+}
+
+/* ======= КНОПКИ ======= */
+button,
+.btn-coddy {
+    background-color: #ffbb08;
+    border: 2px solid #ffbb08;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 250px;
+    max-width: 100%;
+}
+
+.btn-coddy:hover {
+    background-color: #40107f;
+    border-color: #40107f;
+    color: #fff;
+}
+
+.btn-coddy-edit {
+    background-color: #ffbb08;
+    border: 2px solid #ffbb08;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-coddy-edit:hover {
+    background-color: #40107f;
+    border-color: #40107f;
+    color: #fff;
+}
+
+/* ======= ГЕРОЙ ======= */
+#hero p {
+    font-size: 1.25rem;
+    color: #000;
+}
+
+#hero .col {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .img-col {
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+#hero img {
+    width: 130%;
+    max-width: 130% !important;
+}
+
+.CoddyHero {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ======= NAVBAR ======= */
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #6b00e6;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ffbb08;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    margin: auto 10px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ffbb08;
+}
+
+/* Кнопка "Войти" */
+#authorization-link {
+    background-color: #ffbb08;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#authorization-link:hover {
+    background-color: #40107f;
+    color: #fff;
+}
+
+/* ======= FOOTER ======= */
+.custom-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.18rem;
+}
+
+.custom-text:hover {
+    color: #ffbb08;
+}
+
+.custom-icon {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.custom-icon:hover {
+    color: #ffbb08;
+}
+
+/* ======= СЕКЦИИ С КАРТОЧКАМИ ======= */
+/* фон и отступы для курсов и преподавателей */
+
+/* современный стиль карточек + рамка и тень в этих секциях */
+#courses .card,
+#teachers .card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+#courses .card:hover,
+#teachers .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+#courses .card-img-top,
+#teachers .card-img-top {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/* уравниваем высоту и принимаем flex-контент */
+.row .col .card {
+    height: 100%;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .card-text {
+    margin-top: auto;
+}
+
+/* ======= КАРУСЕЛЬ ТЕХНОЛОГИЙ ======= */
+.tech-icons-container {
+    max-width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.tech-logo {
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+/* цвет стрелок карусели */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    border-radius: 50%;
+    padding: 10px;
+    background-size: 1.5rem 1.5rem;
+}
+
+/* ======= ПРЕВЬЮ СЕКЦИИ "НА НАШИХ КУРСАХ..." ======= */
+#courses-technologies {
+    background-color: #ffbb08a1;
+    padding: 2rem 0;
+}
+
+#courses-technologies .mainh1 {
+    /* центровка и фон только под текст */
+    text-align: center;
+    display: inline-block;
+    color: #40107f;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* ======= СЕКЦИЯ О НАС ======= */
+.about-us-section {
+    background-color: #ffbb08a1;
+}
+
+/* ======= ФОРМЫ ======= */
+#addUserForm {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 20px;
+    color: #40107f;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select,
+.input-field {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus,
+.input-field:focus {
+    border-color: #6b00e6;
+    box-shadow: 0 0 8px rgba(107, 0, 230, 0.2);
+}
+
+/* ======= МОДАЛКИ ======= */
+.modal-title {
+    color: #6b00e6;
+    font-weight: bold;
+}
+
+.modal-footer .btn-coddy {
+    width: 100%;
+}
+
+/* ======= АДАПТИВ ======= */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .btn-coddy {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+/* ======= ДОПОЛНИТЕЛЬНЫЕ ОБРАБОТКИ ======= */
+.img-coddy {
+    border-radius: 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========== Стили для «липкого» футера ========== */
+/* 1) Вытягиваем страницу на всю высоту */
+
+  
+  /* 4) Подсветка футера */
+  .footer {
+    background-color: #6b00e6;
+    color: #fff;
+    margin-top: 10rem;  /* отступ сверху, подберите величину по вкусу */
+  }
+  
+  /* 5) Мелкие правки внутри футера */
+  .footer .navbar-brand {
+    font-size: 1.1rem;
+    color: #ffbb08;
+  }
+  .footer .custom-text {
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .footer h5 {
+    margin-bottom: 0.75rem;
+  }
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  .footer p {
+    margin-bottom: 0;
+  }
+
+/* === Отступ контента, чтобы футер оказывался ниже 1080px === */
+#app {
+    /* Если высота экрана ≥1080, контент будет минимум 1080px,
+       и до футера всегда придётся прокрутить */
+    min-height: 1080px;
+  }
+  
+  /* === Увеличиваем шрифты в футере === */
+  .footer .navbar-brand {
+    font-size: 1.3rem;   /* заголовки колонок */
+  }
+  
+  .footer .custom-text {
+    font-size: 1.1rem;   /* текст ссылок и абзацев */
+    line-height: 1.6;
+  }
+  
+  /* Можно чуть добавить межстрочного пространства у списка */
+  .footer ul li {
+    margin-bottom: 0.6rem;
+  }
+
+  
+  /* Можно чуть подвинуть иконку, если нужно */
+  .navbar .fa-user-circle {
+    vertical-align: middle;
+    /* по желанию: margin-top: -2px; */
+  }
+/* Точный размер иконки пользователя */
+.navbar .fa-user-circle {
+    font-size: 1.8rem;  /* подберите значение по вкусу: 1.6rem, 1.7rem, 1.8rem */
+  }
+    
+
+/* ======= Отступы внутри модалки авторизации ======= */
+#authModal .modal-dialog {
+    max-width: 400px;
+    margin: 8vh auto 0;
+  }
+  
+  #authModal .modal-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  #authModal .modal-header {
+    padding-bottom: 1rem;
+  }
+  
+  #authModal .modal-body {
+    padding-top: 1rem;
+  }
+  
+  #authModal .modal-body .mb-3 {
+    margin-bottom: 1.5rem; /* больше пространства между полями */
+  }
+  
+  #authModal #authError {
+    margin-bottom: 1.5rem;
+  }
+  
+  #authModal .modal-footer {
+    padding-top: 1.5rem;
+  }
+  
+  /* Кнопка Войти */
+  #authModal .btn-coddy {
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  #authModal .btn-coddy:hover {
+    background-color: #40107f;
+    border-color: #40107f;
+    color: #fff;
+  }
+  
+
+  .custom-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.custom-pagination .page-btn {
+    border: 1px solid #6b00e6;
+    background-color: transparent;
+    color: #6b00e6;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.custom-pagination .page-btn:hover {
+    background-color: rgba(107, 0, 230, 0.1);
+}
+
+.custom-pagination .page-btn.active {
+    background-color: #6b00e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.roledrow {
+ font-size: .775em;
+ color: #ffbb08;
+}
